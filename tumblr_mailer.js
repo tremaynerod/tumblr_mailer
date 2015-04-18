@@ -1,5 +1,5 @@
 var mandrill = require('mandrill-api/mandrill');
-var mandrill_client = new mandrill.Mandrill('_gAIqkrAdNo6SSMbP2mDFQ');
+var mandrill_client = new mandrill.Mandrill('');
 
 var fs = require('fs');
 var ejs = require('ejs'); // loading EJS into our project
@@ -8,10 +8,10 @@ var tumblr = require('tumblr.js');
 // Authenticate via OAuth
 var tumblr = require('tumblr.js');
 var client = tumblr.createClient({
-  consumer_key: 'xt35kKBXuNnchAG6LYjvzNUQkN7LXwRneWNlcFbMZxA63LGrVk',
-  consumer_secret: 'XJ25ZRRirOVaLMyXm538JLC7As8koIQA5hsmmOfkzRqvuNvqkp',
-  token: 'JYW8QPYQHbiDhVbnePFhuMMnGq42484xdyN3rpGeBiRADdjuUY',
-  token_secret: 'n5bPfJ82kinavPlZZylk9cbGG24NPyV02N6wvw7u6ZN0eP9OUt'
+  consumer_key: '',
+  consumer_secret: '',
+  token: '',
+  token_secret: ''
 });
 
 var csvFile = fs.readFileSync("friend_list.csv","utf8");
